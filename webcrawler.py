@@ -48,11 +48,8 @@ def grava_tabela(tabela: list):
 
     worksheet.range('B2').value = tabela
 
-
-
-
-        
-
+    workbook.save('./tabela.xlsx')
+    workbook.close()
 
 
 
