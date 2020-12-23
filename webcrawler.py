@@ -55,6 +55,6 @@ def grava_tabela(tabela: list):
 
 if __name__ == "__main__":
     
-    crwl = WebCrawler("https://especial.valor.com.br/valor1000/2020/ranking1000maiores")
+    crwl = WebCrawler("https://especial.valor.com.br/valor1000/2020/ranking1000maiores?colunas=id_coluna_1-id_coluna_2-id_coluna_3-id_coluna_4-id_coluna_5-id_coluna_6-id_coluna_7-id_coluna_8-id_coluna_9-id_coluna_10-id_coluna_11-id_coluna_13-id_coluna_14-id_coluna_15-id_coluna_16-id_coluna_17-id_coluna_18-id_coluna_19-id_coluna_20-id_coluna_21-")
     tabela = crwl.parse_table()
     grava_tabela(tabela)
